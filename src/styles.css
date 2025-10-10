@@ -1,0 +1,204 @@
+/* ============================
+GENERAL STYLING
+============================ */
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+a, button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ============================
+NAVBAR
+============================ */
+.navbar {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff !important;
+}
+
+.navbar span.text-white {
+  font-weight: 500;
+}
+
+/* ============================
+BUTTONS
+============================ */
+button {
+  border-radius: 12px !important;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #764ba2, #667eea);
+}
+
+.btn-outline-primary {
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.btn-outline-primary:hover {
+  background: #667eea;
+  color: #fff;
+}
+
+.btn-outline-danger {
+  border: 2px solid #fc5c7d;
+  color: #fc5c7d;
+}
+
+.btn-outline-danger:hover {
+  background: #fc5c7d;
+  color: #fff;
+}
+
+/* ============================
+CARDS
+============================ */
+.card {
+  border-radius: 16px !important;
+  border: none !important;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* ============================
+FORM CONTROLS
+============================ */
+.form-control {
+  border-radius: 12px !important;
+  border: 1px solid #ced4da;
+  padding: 0.5rem 1rem;
+}
+
+.form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102,126,234,0.25);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+/* ============================
+POSTS / COMMENTS
+============================ */
+.post-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-actions button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.comments {
+  margin-left: 1rem;
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.comment p {
+  margin: 0;
+  color: #555;
+}
+
+.comment strong {
+  color: #333;
+}
+
+/* ============================
+LOGIN PAGE
+============================ */
+.login-card {
+  width: 24rem;
+  border-radius: 16px;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-card h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.login-card p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* ============================
+PROFILE PAGE
+============================ */
+.profile-about {
+  color: #555;
+}
+
+.profile-about p {
+  margin: 0;
+}
+
+/* ============================
+RESPONSIVE
+============================ */
+@media (max-width: 576px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .d-flex.gap-2 button {
+    width: 100%;
+  }
+
+  .card {
+    padding: 1rem !important;
+  }
+}
