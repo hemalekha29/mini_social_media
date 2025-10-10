@@ -21,7 +21,7 @@ function App() {
   if (!user) return <Login setUser={setUser} />;
 
   return (
-    <Router>
+    <Router basename="/mini_social_media">
       <Navbar bg="primary" variant="dark">
         <Container className="d-flex justify-content-between">
           <Navbar.Brand>Mini Social Media</Navbar.Brand>
